@@ -12,7 +12,7 @@ class Test_UV_Pointers(tb.UVTestCase):
 
         pyximport.install()
 
-        from tests import cython_helper
+        import cython_helper
 
         self.assertTrue(cython_helper.capsule_equals(cap1, cap2))
         self.assertFalse(cython_helper.capsule_equals(cap1, cap3))
